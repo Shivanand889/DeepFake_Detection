@@ -1,0 +1,61 @@
+/* Container styles */
+.container {
+  width: 100%;
+  max-width: 800px; /* Set a maximum width for better readability */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Header styles */
+header {
+  text-align: center; /* Center align the text */
+  margin-bottom: 20px; /* Add some space below the header */
+}
+
+/* Main styles */
+main {
+  text-align: center; /* Center align the content */
+}
+
+/* File input styles */
+label {
+  display: block; /* Display the label as a block element */
+  margin-bottom: 10px; /* Add space below the label */
+}
+
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+label[for="fileInput"] {
+  cursor: pointer; /* Change cursor to pointer when hovering over the label */
+  background-color: #007bff; /* Add a background color */
+  color: #fff; /* Set text color to white */
+  padding: 10px 15px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  transition: background-color 0.3s; /* Add a smooth transition */
+}
+
+label[for="fileInput"]:hover {
+  background-color: #0056b3; /* Darken the background color on hover */
+}
+
+/* File preview styles */
+.file-preview {
+  margin-top: 20px;
+}
+
+.file-preview img,
+.file-preview video {
+  max-width: 100%;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Fake score styles */
+.file-preview p {
+  margin-top: 10px; /* Add space between the media and the fake score */
+  font-weight: bold; /* Make the fake score text bold */
+}
