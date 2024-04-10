@@ -27,7 +27,8 @@ const usePyth = (selectedFile, setFakeScore) => {
   useEffect(() => {
     if (data) {
       const fake = parseFloat(data.me);
-      if (fake < 0.5) {
+      console.log(fake)
+      if (fake < 0.6) {
         setFakeScore('Fake');
       } else {
         setFakeScore('Real');
